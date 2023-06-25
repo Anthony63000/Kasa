@@ -1,0 +1,36 @@
+
+// Design du conteneur de la carte
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 43px 100px 50px 100px;
+    padding: 56px 50px 43px 50px;
+    row-gap: 50px;
+    column-gap: 60px;
+    background: rgba(246, 246, 246, 1);
+    border-radius: 25px;
+}
+
+// Design des cartes 
+
+.cardContainer {
+    background-color: rgba(255,96,96,1);
+    max-height: 340px;
+    height: 340px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    .cardImage {
+        height: 84.71%;
+    }
+
+    .cardText {
+        height: 15.29%;
+        color: white;
+    }
+}

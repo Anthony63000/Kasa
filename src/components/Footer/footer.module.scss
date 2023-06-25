@@ -1,0 +1,29 @@
+
+.footerContainer {
+    height: 209px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+    .contentContainer {
+        color: white;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 29px;
+
+        .footerImage {
+            width: 122px;
+            height: 39px;
+            margin-bottom: 29.50px;
+        }
+
+        .footerText {
+            font-size: 24px;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+        }
+    }
+}
