@@ -1,14 +1,14 @@
 
 import styles from "../Banner/banner.module.scss"
-import imageBanner from "../../assets/Images/imageBanner.png"
 
-function Banner() {
+
+function Banner({ imageSrc, altText, text }) {
     return (
         <div className={styles.bannerContainer}>
-            <img src={imageBanner}
-             alt="Paysage composé de falaise avec la mer en contre-bas" 
+            <img src={imageSrc}
+             alt={altText}
              className={styles.imageBanner}/>
-            <p className={styles.textBanner}>Chez vous, partout ailleurs</p>
+            <p className={styles.textBanner}>{text}</p>
         </div>
     )
 }

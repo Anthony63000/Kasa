@@ -1,4 +1,71 @@
+// animation des flèche 
+
+
+
+
+// container des features
+
+.featuresContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin: 38px 0px;
+}
+
+// design des features
 
 .featureContent {
-    border: 1px solid;
+    background: rgba(255, 96, 96, 1);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px 20px 10px 15px;
+
+    .featureText {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .featureImage {
+        width: 24px;
+        height: 13.70px;
+        align-self: center;
+        cursor: pointer;
+        transition: transform 0.5s ease-in-out;
+        
+    }
+    .arrowRotate {
+        transform: rotate(-180deg);
+    }
 }
+
+// design de l'apparition des texte 
+
+.extendTextContainer {
+    max-width: 1024px;
+    margin: auto;
+    width: 100%;
+    padding: 10px 20px 10px 15px;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(246, 246, 246, 1);
+  
+    .extendText {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(255, 96, 96, 1);
+    }
+
+}
+
+
+
+
+
+ 

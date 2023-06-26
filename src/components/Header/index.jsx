@@ -1,18 +1,27 @@
 
 import styles from "../../assets/styles/styles.module.scss"
 import Logo from "../../assets/Images/LOGO.png"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 function Header() {
+    
     return (
         <div className={styles.container}>
             <div className={styles.logoContainer}>
                 <img src={Logo} alt="Logo de l'enseigne kasa" />
             </div>
             <nav className={styles.listContainer}>
-                <Link to={"/"} className={`${styles.list} ${styles.listFirst}`}>Accueil</Link>
-                <Link to={"/About"}className={`${styles.list} ${styles.listSecond}`}>A Propos</Link>
+            <NavLink 
+            to={"/"} 
+            className={({isActive}) => (isActive ? `${styles.list} ${styles.listFirst} ${styles.activeLink}` : `${styles.list} ${styles.listFirst}`)}>
+                Accueil
+            </NavLink>
+            <NavLink 
+            to={"/About"}
+            className={({isActive}) => (isActive ? `${styles.list} ${styles.listSecond} ${styles.activeLink}` : `${styles.list} ${styles.listSecond}`)}>
+                A Propos
+            </NavLink>
             </nav>
         </div>
     )
