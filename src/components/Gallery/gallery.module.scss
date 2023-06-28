@@ -1,0 +1,29 @@
+
+.galleryContainer {
+    
+    position : relative;
+    margin: 0 100px 50px 100px;
+
+    .image {
+        object-fit: cover;
+        height: 415px;
+        width: 100%;
+        margin: 0;
+        border-radius: 25px;
+    }
+
+    .arrow {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .arrowLeft {
+        top: 156.7px;
+        left: 23.36px;
+    }
+
+    .arrowRight {
+        top: 156.7px;
+        right: 23.36px;
+    }
+}

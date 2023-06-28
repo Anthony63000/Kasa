@@ -5,6 +5,9 @@ import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home/index';
 import About from './pages/Apropos';
 import Error from './pages/Error/Error';
+import Logement from './pages/Logement/Logement';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +17,7 @@ root.render(
         <Route path='/' element={<Home />}></Route>
         <Route path='/About' element={<About />}></Route>
         <Route path='*' element={<Error />}></Route>
+        <Route path="/Logement/:id" element={<Logement />}></Route>
       </Routes>
     </Router>
   </React.StrictMode>

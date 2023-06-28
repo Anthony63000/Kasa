@@ -54,16 +54,34 @@
     padding: 10px 20px 10px 15px;
     border-radius: 0 0 5px 5px;
     background-color: rgba(246, 246, 246, 1);
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.250s ease-in-out, opacity 0.5s ease-in-out;
   
-    .extendText {
-        margin: 0;
-        font-size: 18px;
-        font-weight: 400;
-        color: rgba(255, 96, 96, 1);
+}
+    .extendTextContainer.show {
+      opacity: 1;
+      transform: scaleY(1);
     }
 
-}
+    .extendTextContainer.hide {
+        opacity: 0;
+        transform: scaleY(0);
+    }
 
+    .extendText {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 400;
+      color: rgba(255, 96, 96, 1);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+  
+
+  
+  
 
 
 
