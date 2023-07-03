@@ -2,7 +2,7 @@
 import { useState } from "react";
 import styles from "./feature.module.scss";
 
-function Feature({ title, imageSrc, altText, text }) {
+function Feature({ title, imageSrc, altText, text, equipments }) {
   const [isVisible, setIsVisible] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
   const [animate, setAnimate] = useState(false);
@@ -49,7 +49,7 @@ function Feature({ title, imageSrc, altText, text }) {
       </div>
       {isVisible && (
         <div className={extendTextContainerClass}>
-          <p className={styles.extendText}>{text}</p>
+          <p className={styles.extendText}>{text}{equipments}</p>
         </div>
       )}
     </div>

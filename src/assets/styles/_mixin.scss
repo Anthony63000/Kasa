@@ -1,0 +1,79 @@
+
+@mixin headerResponsive {
+    @media (min-width:375px) and (max-width : 800px) {
+        @content
+    }
+}
+
+@mixin bannerResponsiveLarge {
+    @media (max-width : 1000px) {
+        @content
+    }
+}
+
+@mixin bannerResponsiveMeduim {
+    @media (max-width : 800px) {
+        @content
+    }
+}
+
+@mixin bannerResponsiveSmall {
+    @media(min-width:375px) and (max-width:425px) {
+        @content
+    }
+}
+
+@mixin cardResponsiveLarge {
+    @media(max-width:1250px) {
+        @content
+    }
+}
+
+@mixin cardResponsiveMeduim {
+    @media(max-width:800px) {
+        @content
+    }
+}
+
+@mixin cardResponsiveSmall {
+    @media(max-width:590px) {
+        @content
+    }
+}
+
+@mixin footerResponsive {
+    @media(max-width: 425px) {
+        @content
+    } 
+}
+
+@mixin featureResponsive {
+    @media(max-width: 800px) {
+        @content
+    } 
+}
+
+@mixin errorResponsiveLarge {
+    @media (max-width : 1000px) {
+        @content
+    }
+}
+
+@mixin errorResponsiveMeduim {
+    @media (max-width : 800px) {
+        @content
+    }
+}
+
+@mixin galleryResponsiveLarge {
+    @media (max-width : 800px) {
+        @content
+    }
+}
+
+@mixin galleryResponsiveMeduim {
+    @media (max-width : 425px) {
+        @content
+    }
+}
+

@@ -1,8 +1,14 @@
 
+@import "../../assets//styles/mixin";
+
 .galleryContainer {
     
     position : relative;
-    margin: 0 100px 50px 100px;
+    margin: 0 100px 24px 100px;
+
+    @include galleryResponsiveLarge {
+        margin: 0 20px 15px 20px;
+    }
 
     .image {
         object-fit: cover;
@@ -10,20 +16,66 @@
         width: 100%;
         margin: 0;
         border-radius: 25px;
+
+        @include galleryResponsiveLarge {
+            height: 255px;
+        }
     }
 
     .arrow {
         position: absolute;
         z-index: 2;
+        cursor: pointer;
+
+        @include galleryResponsiveLarge {
+            width: 29.18px;
+            height: 49.5px;
+        }
+
+        @include galleryResponsiveMeduim {
+            width: 11.67px;
+            height: 19.8px;
+        }
     }
 
     .arrowLeft {
         top: 156.7px;
         left: 23.36px;
+
+        @include galleryResponsiveLarge {
+            top: 118.1px;
+        }
+
+        @include galleryResponsiveMeduim {
+            left: 5.84px;
+        }
     }
 
     .arrowRight {
         top: 156.7px;
         right: 23.36px;
+
+        @include galleryResponsiveLarge {
+            top: 118.1px;
+        }
+
+        @include galleryResponsiveMeduim {
+            right: 5.84px;
+        }
+    }
+
+    .indicator {
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        bottom: 24.92px;
+        left: 50%;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 500;
+
+        @include galleryResponsiveMeduim {
+            font-size: 12px;
+        }
     }
 }

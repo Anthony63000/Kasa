@@ -1,4 +1,6 @@
 
+import styles from "../../assets/styles/app.module.scss"
+
 import Header from "../../components/Header/index"
 import Banner from "../../components/Banner/index"
 import Cards from "../../components/Cards/Cards"
@@ -8,7 +10,7 @@ import imageBanner from "../../assets/Images/imageBanner.png"
 
 function Home() {
   return (
-    <div className="App">
+    <div className={styles.app}>
       <Header />
       <Banner 
       imageSrc={imageBanner}

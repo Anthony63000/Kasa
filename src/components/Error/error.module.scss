@@ -1,28 +1,55 @@
 
+@import "../../assets/styles/mixin";
+
 .errorContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 139px 284px;
+    margin: 89px 284px;
+
+    @include errorResponsiveLarge {
+        margin: 44.5px 142px;
+    }
+
+    @include errorResponsiveMeduim {
+        margin: 63px 57.5px 113px 57.5px;
+    }
 
     .title {
-        line-height: 410.69px;
+        display: flex;
+        align-items: center;
         font-size: 288px;
         font-weight: 700;
         font-family: 'Montserrat', sans-serif;
         color: rgba(255,96,96,1);
         margin: 0;
+
+        @include errorResponsiveLarge {
+            font-size: 192px;
+        }
+
+        @include errorResponsiveMeduim {
+            font-size: 99px;
+        }
     }
 
     .text {
         font-family: 'Montserrat', sans-serif;
         color: rgba(255,96,96,1);
         font-size: 36px;
-        line-height: 51.34px;
         font-weight: 500;
-        white-space: nowrap;
-        margin: 0;
+        white-space: wrap;
+        margin: 139px 0 0 0;
+        text-align: center;
+
+        @include errorResponsiveLarge {
+            font-size: 27px;
+        }
+
+        @include errorResponsiveMeduim {
+            font-size: 18px;
+        }
     }
 
     .link {
@@ -32,5 +59,10 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 25.67px;
+    }
+
+    @include errorResponsiveMeduim {
+        font-size: 14px;
+        text-align: center;
     }
 }

@@ -9,7 +9,7 @@ function Header() {
     return (
         <div className={styles.container}>
             <div className={styles.logoContainer}>
-                <img src={Logo} alt="Logo de l'enseigne kasa" />
+                <img className={styles.image} src={Logo} alt="Logo de l'enseigne kasa" />
             </div>
             <nav className={styles.listContainer}>
             <NavLink 

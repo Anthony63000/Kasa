@@ -1,9 +1,17 @@
 
+@import "../../assets//styles/mixin";
+
+
 .bannerContainer {
     padding: 0 100px 0 100px;
     position: relative;
     max-height: 223px;
     display: flex;
+
+    @include bannerResponsiveMeduim {
+        padding: 0 20px;
+        height: 111px;
+    }
 
     .imageBanner {
         object-fit: cover;
@@ -26,5 +34,42 @@
         font-size: 48px;
         font-weight: 500;
         white-space: nowrap;
+
+        @include bannerResponsiveLarge {
+            font-size: 30px;
+        }
+
+        @include bannerResponsiveMeduim {
+            font-size: 24px;
+            white-space: wrap;
+            margin: auto;
+            width: 57.86%;
+        }
+
+        @include bannerResponsiveSmall {
+            top: 26px;
+            left: 35.5px;
+            transform: translate(0);
+        }
+
     }
+    
 }
+
+// Style composant Banner pour la page à propos dans les média queries
+
+.about {
+
+   & .bannerContainer {
+
+    @include bannerResponsiveMeduim {
+        height: 223px;
+    }
+   }
+
+    & .imageBanner {
+        height: 223px;
+    }
+
+}
+
