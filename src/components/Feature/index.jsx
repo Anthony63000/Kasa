@@ -37,7 +37,7 @@ function Feature({ title, imageSrc, altText, text, equipments }) {
   const extendTextContainerClass = `${styles.extendTextContainer} ${animate ? styles.show : ""}`;
 
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.featureContent}>
         <p className={styles.featureText}>{title}</p>
         <img

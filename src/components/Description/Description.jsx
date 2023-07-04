@@ -43,11 +43,6 @@ function Description({ title, place, tags, text, name, imageUrl, altText, rating
             </p>
           ))}
         </div>
-        <Feature 
-          title="Description" 
-          imageSrc={arrow} 
-          text={text} 
-        />
       </div>
       <div className={styles.right}>
         <div className={styles.owner}>
@@ -61,8 +56,14 @@ function Description({ title, place, tags, text, name, imageUrl, altText, rating
         <div className={styles.rating}>
           {renderStars()}
         </div>
-        <div className={styles.containerFeature}>
-        <Feature 
+      </div>
+      <div className={styles.featureContainer}>
+      <Feature 
+          title="Description" 
+          imageSrc={arrow} 
+          text={text} 
+        />
+      <Feature 
           title="Equipements" 
           imageSrc={arrow} 
           equipments={equipments.map((equipement, index) => (
@@ -71,8 +72,7 @@ function Description({ title, place, tags, text, name, imageUrl, altText, rating
             </p>
           ))}
         >
-        </Feature>
-        </div>
+        </Feature>  
       </div>
     </div>
   );

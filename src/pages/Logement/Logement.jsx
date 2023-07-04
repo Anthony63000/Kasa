@@ -30,7 +30,7 @@ function Logement() {
                 arrowRight = {arrowRight}
                 arrowLeft = {arrowLeft}
                 />
-            {/*<Description
+            <Description
             title={accommodationSelected.title}
             place={accommodationSelected.location}
             tags={accommodationSelected.tags}
@@ -40,7 +40,7 @@ function Logement() {
             ratings={accommodationSelected.rating}
             equipments={accommodationSelected.equipments}
     />
-    <Footer />*/}
+    <Footer />
         </div>
     )
 }
