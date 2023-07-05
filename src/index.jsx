@@ -1,13 +1,15 @@
+// Import des différents fichier externe
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import Home from './pages/Home/index';
-import About from './pages/Apropos';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
 import Error from './pages/Error/Error';
-import Logement from './pages/Logement/Logement';
+import Logement from './pages/Lodging/Lodging';
 
-
+// Déployer l'application
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

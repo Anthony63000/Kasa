@@ -1,8 +1,9 @@
 
 import { useState } from "react";
-import styles from "./feature.module.scss";
+import styles from "../../assets/styles/components/feature.module.scss";
 
 function Feature({ title, imageSrc, altText, text, equipments }) {
+  
   const [isVisible, setIsVisible] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
   const [animate, setAnimate] = useState(false);
@@ -27,7 +28,7 @@ function Feature({ title, imageSrc, altText, text, equipments }) {
       toggleVisibility();
       const timer = setTimeout(() => {
         setAnimate(true);
-      }, 100); // Temps de transition de l'animation d'apparition
+      }, 250); // Temps de transition de l'animation d'apparition
       return () => {
         clearTimeout(timer);
       };

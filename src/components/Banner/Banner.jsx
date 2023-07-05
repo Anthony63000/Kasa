@@ -1,5 +1,5 @@
 
-import styles from "../Banner/banner.module.scss"
+import styles from "../../assets/styles/components/banner.module.scss"
 
 
 function Banner({ imageSrc, altText, text }) {

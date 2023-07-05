@@ -3,10 +3,10 @@ import styles from "../../assets/styles/app.module.scss"
 
 import { useParams } from 'react-router-dom';
 
-import Header from "../../components/Header/index"
+import Header from "../../components/Header/Header"
 import Gallery from "../../components/Gallery/Gallery"
 import Description from "../../components/Description/Description"
-import Footer from "../../components/Footer/index"
+import Footer from "../../components/Footer/Footer"
 
 import data from "../../assets/data.json"
 

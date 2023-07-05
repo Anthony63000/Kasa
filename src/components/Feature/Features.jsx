@@ -1,7 +1,7 @@
-import Feature from "./index";
+import Feature from "./Feature";
 import arrow from "../../assets/Images/Vector.png"
 
-import styles from "./feature.module.scss"
+import styles from "../../assets/styles/components/feature.module.scss"
 
 
 function Features() {

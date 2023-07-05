@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import styles from "./gallery.module.scss"
+import styles from "../../assets/styles/components/gallery.module.scss"
 
 function Gallery({imageSrc, altText, arrowLeft, arrowRight, altRight, altLeft}) {
 
@@ -8,11 +8,11 @@ function Gallery({imageSrc, altText, arrowLeft, arrowRight, altRight, altLeft}) 
     const totalImage = imageSrc.length;
 
     const handlePreviousImage = () => {
-        setImageIndex((PrevIndex) => (PrevIndex === 0 ? totalImage -1 : PrevIndex - 1));
+        setImageIndex((PrevIndex) => (PrevIndex === 0 ? totalImage - 1 : PrevIndex - 1));
     };
 
     const handleNextImage = () => {
-        setImageIndex((PrevIndex) => (PrevIndex === totalImage -1 ? 0 : PrevIndex + 1));
+        setImageIndex((PrevIndex) => (PrevIndex === totalImage - 1 ? 0 : PrevIndex + 1));
     };
 
     const position = imageIndex + 1 

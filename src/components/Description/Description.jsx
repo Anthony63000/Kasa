@@ -1,8 +1,8 @@
-import styles from "../../components/Description/description.module.scss";
+import styles from "../../assets/styles/components/description.module.scss";
 import arrow from "../../assets/Images/Vector.png";
-import style from "../../components/Feature/feature.module.scss"
+import style from "../../assets/styles/components/feature.module.scss"
 
-import Feature from "../Feature/index";
+import Feature from "../Feature/Feature";
 
 function Description({ title, place, tags, text, name, imageUrl, altText, ratings, equipments }) {
   
@@ -66,10 +66,10 @@ function Description({ title, place, tags, text, name, imageUrl, altText, rating
       <Feature 
           title="Equipements" 
           imageSrc={arrow} 
-          equipments={equipments.map((equipement, index) => (
-            <p key={index} className={styles.equipment}>
+          equipments ={equipments.map((equipement, index) => (
+            <span key={index} className={styles.equipment}>
               {equipement}
-            </p>
+            </span>
           ))}
         >
         </Feature>  

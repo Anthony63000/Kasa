@@ -1,5 +1,5 @@
 
-@import "../../assets//styles/mixin";
+@import "../utlis/mixin";
 
 .container {
     
@@ -188,6 +188,11 @@
         @include descriptionResponsiveMeduim {
             flex-direction: column;
             gap: 20px;
+        }
+
+        .equipment {
+            display: flex;
+            line-height: 17.11px;
         }
     }
 

@@ -1,5 +1,5 @@
-import styles from "../Cards/card.module.scss";
-import Card from "./index";
+import styles from "../../assets/styles/components/card.module.scss";
+import Card from "./Card";
 import data from "../../assets/data.json";
 
 import { Link } from 'react-router-dom';

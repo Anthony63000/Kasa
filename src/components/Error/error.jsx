@@ -1,5 +1,5 @@
 
-import styles from "../../components/Error/error.module.scss"
+import styles from "../../assets/styles/components/error.module.scss"
 import { NavLink } from "react-router-dom"
 
 function ErrorContent() {

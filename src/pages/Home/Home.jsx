@@ -1,10 +1,10 @@
 
 import styles from "../../assets/styles/app.module.scss"
 
-import Header from "../../components/Header/index"
-import Banner from "../../components/Banner/index"
+import Header from "../../components/Header/Header"
+import Banner from "../../components/Banner/Banner"
 import Cards from "../../components/Cards/Cards"
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer/Footer";
 
 import imageBanner from "../../assets/Images/imageBanner.png"
 

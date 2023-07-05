@@ -1,5 +1,5 @@
 
-import styles from "./card.module.scss"
+import styles from "../../assets/styles/components/card.module.scss"
 
 function Card({title, imageUrl}) {
     return (

@@ -1,5 +1,5 @@
 
-@import "../../assets/styles/mixin";
+@import "../utlis/mixin";
 
 // container des features
 
@@ -126,6 +126,11 @@
     }
 
     & .extendText {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
         @include descriptionResponsiveMeduim {
             font-size: 13px;
         }
