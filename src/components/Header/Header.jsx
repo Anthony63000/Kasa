@@ -13,7 +13,7 @@ function Header() {
             </div>
             <nav className={styles.listContainer}>
             <NavLink 
-            to={"/"} 
+            to={"/Home"} 
             className={({isActive}) => 
             (isActive ? `${styles.list} ${styles.listFirst} ${styles.activeLink}` 
             : 
