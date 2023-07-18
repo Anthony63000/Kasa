@@ -32,49 +32,59 @@ function Description({ title, place, tags, text, name, imageUrl, altText, rating
   };
 
   return (
-    <div className={`${styles.container} ${style.accomodation}`}>
-      <div className={styles.left}>
-        <h2 className={styles.title}>{title}</h2>
-        <p className={styles.textLocation}>{place}</p>
-        <div className={styles.tagContainer}>
-          {tags.map((tag, index) => (
-            <p key={index} className={styles.tag}>
-              {tag}
-            </p>
-          ))}
-        </div>
-      </div>
-      <div className={styles.right}>
-        <div className={styles.owner}>
-          <p className={styles.name}>
-            <span>{firstName}</span>
-            <br />
-            <span>{lastName}</span>
+    <section>
+      <div className={`${styles.container} ${style.accomodation}`}>
+        <div className={styles.left}>
+          <h2 className={styles.title}>
+            {title}
+          </h2>
+          <p className={styles.textLocation}>
+            {place}
           </p>
-          <img className={styles.image} src={imageUrl} alt={altText} />
+          <div className={styles.tagContainer}>
+            {tags.map((tag, index) => (
+              <p key={index} className={styles.tag}>
+                {tag}
+              </p>
+            ))}
+          </div>
         </div>
-        <div className={styles.rating}>
-          {renderStars()}
+        <div className={styles.right}>
+          <div className={styles.owner}>
+            <p className={styles.name}>
+              <span>{firstName}</span>
+              <br />
+              <span>{lastName}</span>
+            </p>
+            <img className={styles.image} 
+              src={imageUrl} 
+              alt={altText} 
+            />
+          </div>
+          <div className={styles.rating}>
+            {renderStars()}
+          </div>
+        </div>
+        <div className={styles.featureContainer}>
+          <Feature 
+              title="Description" 
+              imageSrc={arrow} 
+              text={text} 
+          />
+          <Feature 
+              title="Equipements" 
+              imageSrc={arrow} 
+              equipments ={equipments.map((equipement, index) => (
+                <span key={index} 
+                  className={styles.equipment}
+                >
+                  {equipement}
+                </span>
+              ))}
+          />
         </div>
       </div>
-      <div className={styles.featureContainer}>
-      <Feature 
-          title="Description" 
-          imageSrc={arrow} 
-          text={text} 
-        />
-      <Feature 
-          title="Equipements" 
-          imageSrc={arrow} 
-          equipments ={equipments.map((equipement, index) => (
-            <span key={index} className={styles.equipment}>
-              {equipement}
-            </span>
-          ))}
-        >
-        </Feature>  
-      </div>
-    </div>
+    </section>
   );
 }
 

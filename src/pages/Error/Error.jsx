@@ -7,7 +7,9 @@ function Error() {
     return (
         <div>
             <Header />
-            <ErrorContent />
+            <main>
+                <ErrorContent />
+            </main>
             <Footer />
         </div>
     )

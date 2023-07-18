@@ -3,14 +3,21 @@ import styles from "../../assets/styles/components/card.module.scss"
 
 function Card({title, imageUrl}) {
     return (
-        <div className={styles.cardContainer}>
-            <div className={styles.cardImage}>
-                <img className={styles.image} src={imageUrl} alt="" />
+        <article>
+            <div className={styles.cardContainer}>
+                <div className={styles.cardImage}>
+                    <img className={styles.image} 
+                        src={imageUrl} 
+                        alt="" 
+                    />
+                </div>
+                <div className={styles.cardTextContainer}>
+                    <h3 className={styles.cardText}>
+                        {title}
+                    </h3>
+                </div>
             </div>
-            <div className={styles.cardText}>
-                <p>{title}</p>
-            </div>
-        </div>
+        </article>
     )
 }
 

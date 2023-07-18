@@ -6,13 +6,20 @@ import { Link } from 'react-router-dom';
 
 function Cards() {
   return (
-    <div className={styles.cardsContainer}>
-      {data.map((card, index) => (
-        <Link to={`/Logement/${card.id}`} key={index} className={styles.cardLink}>
-          <Card title={card.title} imageUrl={card.cover}/>
-        </Link>
-      ))}
-    </div>
+    <section>
+      <div className={styles.cardsContainer}>
+        {data.map((card, index) => (
+          <Link to={`/Logement/${card.id}`} 
+            key={index} 
+            className={styles.cardLink}
+          >
+            <Card title={card.title} 
+              imageUrl={card.cover}
+            />
+          </Link>
+        ))}
+      </div>
+    </section>
   );
 }
 

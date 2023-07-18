@@ -24,6 +24,7 @@
     //margin: auto;
     border-radius: 5px;
     padding: 10px 20px 10px 15px;
+    width: 100%;
 
     .featureText {
         color: white;
@@ -62,6 +63,7 @@
     padding: 10px 20px 10px 15px;
     border-radius: 0 0 5px 5px;
     background-color: rgba(246, 246, 246, 1);
+    width: 100%;
     opacity: 0;
     transform: scaleY(0);
     transform-origin: top;
@@ -94,19 +96,18 @@
 
 .accomodation {
 
-    & .container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-       
-      }
-
-    & .featureContent  {
-        max-width: 547px;
+    .container {
+        max-width: 582px;
+        width: 49.75%;
 
         @include descriptionResponsiveMeduim {
+            width: 100%;
             max-width: none;
         }
+    }
+
+    & .featureContent  {
+        width: auto;
     }
     
     & .featureText {

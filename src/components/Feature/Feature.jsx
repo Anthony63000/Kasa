@@ -15,20 +15,18 @@ function Feature({ title, imageSrc, altText, text, equipments }) {
   const handleClick = () => {
     setIsRotated(!isRotated);
     if (isVisible) {
-      // Animation de disparition
       setAnimate(false);
       const timer = setTimeout(() => {
         toggleVisibility();
-      }, 250); // Temps de transition de l'animation de disparition
+      }, 250);
       return () => {
         clearTimeout(timer);
       };
     } else {
-      // Animation d'apparition
       toggleVisibility();
       const timer = setTimeout(() => {
         setAnimate(true);
-      }, 250); // Temps de transition de l'animation d'apparition
+      }, 250); 
       return () => {
         clearTimeout(timer);
       };
@@ -38,22 +36,22 @@ function Feature({ title, imageSrc, altText, text, equipments }) {
   const extendTextContainerClass = `${styles.extendTextContainer} ${animate ? styles.show : ""}`;
 
   return (
-    <div className={styles.container}>
-      <div className={styles.featureContent}>
-        <p className={styles.featureText}>{title}</p>
-        <img
-          className={`${styles.featureImage} ${isRotated ? styles.arrowRotate : ""}`}
-          src={imageSrc}
-          alt={altText}
-          onClick={handleClick}
-        />
-      </div>
-      {isVisible && (
-        <div className={extendTextContainerClass}>
-          <p className={styles.extendText}>{text}{equipments}</p>
+      <div className={styles.container}>
+        <div className={styles.featureContent}>
+          <h3 className={styles.featureText}>{title}</h3>
+          <img
+            className={`${styles.featureImage} ${isRotated ? styles.arrowRotate : ""}`}
+            src={imageSrc}
+            alt={altText}
+            onClick={handleClick}
+          />
         </div>
-      )}
-    </div>
+        {isVisible && (
+          <div className={extendTextContainerClass}>
+            <p className={styles.extendText}>{text}{equipments}</p>
+          </div>
+        )}
+      </div>
   );
 }
 

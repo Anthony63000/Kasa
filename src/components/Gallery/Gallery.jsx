@@ -18,33 +18,36 @@ function Gallery({imageSrc, altText, arrowLeft, arrowRight, altRight, altLeft}) 
     const position = imageIndex + 1 
 
     return (
-        <div className={styles.galleryContainer}>
-            {totalImage > 1 && (
-            <img 
-            className={`${styles.arrowLeft} ${styles.arrow}`} 
-            src={arrowLeft} alt={altLeft} 
-            onClick={handlePreviousImage}
-            />
-            )}
-            <img 
-            className={styles.image} 
-            src={imageSrc[imageIndex]} 
-            alt={altText} />
-            {totalImage > 1 && (
-            <p 
-            className={styles.indicator}>
-                {position}/{totalImage}
-            </p>
-            )}
-            {totalImage > 1 && (
-            <img 
-            className={`${styles.arrowRight} ${styles.arrow}`} 
-            src={arrowRight} 
-            alt={altRight}
-            onClick={handleNextImage}
-            />
-            )}
-        </div>
+        <section>
+            <div className={styles.galleryContainer}>
+                {totalImage > 1 && (
+                <img 
+                    className={`${styles.arrowLeft} ${styles.arrow}`} 
+                    src={arrowLeft} alt={altLeft} 
+                    onClick={handlePreviousImage}
+                />
+                )}
+                <img 
+                    className={styles.image} 
+                    src={imageSrc[imageIndex]} 
+                    alt={altText} 
+                />
+                {totalImage > 1 && (
+                <p 
+                    className={styles.indicator}>
+                    {position}/{totalImage}
+                </p>
+                )}
+                {totalImage > 1 && (
+                <img 
+                    className={`${styles.arrowRight} ${styles.arrow}`} 
+                    src={arrowRight} 
+                    alt={altRight}
+                    onClick={handleNextImage}
+                />
+                )}
+            </div>
+        </section>
     )
 }
 

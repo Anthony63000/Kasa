@@ -14,11 +14,13 @@ function About() {
     return (
         <div className={`${styles.app} ${style.about}`}>
             <Header />
-            <Banner 
-            imageSrc={imageBanner}
-            altText="Paysage composé de montagne et d'un fleuve en contre-bas avec une forêt en premier plan"
-            />
-            <Features />
+            <main>
+                <Banner 
+                    imageSrc={imageBanner}
+                    altText="Paysage composé de montagne et d'un fleuve en contre-bas avec une forêt en premier plan"
+                />
+                <Features />
+            </main>
             <Footer />
         </div>
     );

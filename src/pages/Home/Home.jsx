@@ -12,12 +12,14 @@ function Home() {
   return (
     <div className={styles.app}>
       <Header />
-      <Banner 
-      imageSrc={imageBanner}
-      altText="Image d'une falaise avce l'océan en contre-bas"
-      text="Chez vous, partout et ailleurs"
-      />
-      <Cards />
+      <main>
+        <Banner 
+        imageSrc={imageBanner}
+        altText="Image d'une falaise avce l'océan en contre-bas"
+        text="Chez vous, partout et ailleurs"
+        />
+        <Cards />
+      </main>
       <Footer />
     </div>
   );
