@@ -9,7 +9,7 @@ function Cards() {
     <section>
       <div className={styles.cardsContainer}>
         {data.map((card, index) => (
-          <Link to={`/Logement/${card.id}`} 
+          <Link to={`/Kasa/Logement/${card.id}`} 
             key={index} 
             className={styles.cardLink}
           >

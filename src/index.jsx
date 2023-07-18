@@ -16,10 +16,10 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path='/Home' element={<Home />}></Route>
-        <Route path='/About' element={<About />}></Route>
+        <Route path='/Kasa/' element={<Home />}></Route>
+        <Route path='/Kasa/About' element={<About />}></Route>
         <Route path='*' element={<Error />}></Route>
-        <Route path="/Logement/:id" element={<Logement />}></Route>
+        <Route path="/Kasa/Logement/:id" element={<Logement />}></Route>
       </Routes>
     </Router>
   </React.StrictMode>

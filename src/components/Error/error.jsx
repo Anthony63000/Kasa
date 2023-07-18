@@ -13,7 +13,7 @@ function ErrorContent() {
                     Oups! La page que vous demandez n'existe pas.
                 </p>
                 <NavLink className={styles.link} 
-                    to={"/Home"}>
+                    to={"/Kasa/"}>
                         Retourner sur la page d'accueil
                 </NavLink>
             </div>
