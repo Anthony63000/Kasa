@@ -21,10 +21,8 @@
     background: rgba(255, 96, 96, 1);
     display: flex;
     justify-content: space-between;
-    //margin: auto;
     border-radius: 5px;
     padding: 10px 20px 10px 15px;
-    width: 100%;
 
     .featureText {
         color: white;
@@ -63,7 +61,6 @@
     padding: 10px 20px 10px 15px;
     border-radius: 0 0 5px 5px;
     background-color: rgba(246, 246, 246, 1);
-    width: 100%;
     opacity: 0;
     transform: scaleY(0);
     transform-origin: top;
@@ -73,11 +70,6 @@
     .extendTextContainer.show {
       opacity: 1;
       transform: scaleY(1);
-    }
-
-    .extendTextContainer.hide {
-        opacity: 0;
-        transform: scaleY(0);
     }
 
     .extendText {

@@ -49,6 +49,7 @@
 
         @include errorResponsiveMeduim {
             font-size: 18px;
+            margin-top: 113px;
         }
     }
 
@@ -59,10 +60,11 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 25.67px;
-    }
 
-    @include errorResponsiveMeduim {
-        font-size: 14px;
-        text-align: center;
+        @include errorResponsiveMeduim {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 113px;
+        }
     }
 }

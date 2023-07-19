@@ -51,8 +51,25 @@
     cursor: pointer;
     min-width: 200px;
 
+    @include cardResponsiveLarge {
+        height: 300px;
+    }
+
+    @include cardResponsiveXSmall {
+        height: 255px;
+    }
+
     .cardImage {
         height: 275px;
+
+        @include cardResponsiveLarge {
+            height: 235px;
+        }
+
+        @include cardResponsiveXSmall {
+            height: 195px;
+        }
+
     }
 
     .image {
