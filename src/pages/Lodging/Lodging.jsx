@@ -20,7 +20,7 @@ function Logement() {
     const accommodationSelected = data.find(accommodation => accommodation.id === id);
 
     if (!accommodationSelected) {
-       return <Navigate to="/Error" replace/>
+       return <Navigate to="/Kasa/Error" replace/>
     }
 
     return (
