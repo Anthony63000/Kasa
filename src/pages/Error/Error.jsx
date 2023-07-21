@@ -2,7 +2,7 @@
 import styles from "../../assets/styles/app.module.scss"
 
 import Header from "../../components/Header/Header"
-import ErrorContent from "../../components/Error/Error"
+import ErrorContent from "../../components/Error/ErrorContent"
 import Footer from "../../components/Footer/Footer"
 
 function Error() {
